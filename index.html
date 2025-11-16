@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ejercicios JavaScript</h1>
+            <p class="subtitle">Astronomía, Medio Ambiente y Salud</p>
+        </header>
+
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-header">
+                    <h2 class="category-title">Astronomía</h2>
+                </div>
+                <button class="exercise-btn" onclick="openExercise('ast1')">
+                    <span>Clasificación de Brillo Estelar</span>
+                    <span class="exercise-number">1</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('ast2')">
+                    <span>Distancias de Planetas</span>
+                    <span class="exercise-number">2</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('ast3')">
+                    <span>Contar Cráteres Lunares</span>
+                    <span class="exercise-number">3</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('ast4')">
+                    <span>Identificar Cuerpo Celeste</span>
+                    <span class="exercise-number">4</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('ast5')">
+                    <span>Registro de Niveles de Luz</span>
+                    <span class="exercise-number">5</span>
+                </button>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h2 class="category-title">Medio Ambiente</h2>
+                </div>
+                <button class="exercise-btn" onclick="openExercise('env1')">
+                    <span>Calidad del Aire (AQI)</span>
+                    <span class="exercise-number">1</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('env2')">
+                    <span>Niveles de Ruido Ambiental</span>
+                    <span class="exercise-number">2</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('env3')">
+                    <span>Focos de Calor</span>
+                    <span class="exercise-number">3</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('env4')">
+                    <span>Clasificación de Residuos</span>
+                    <span class="exercise-number">4</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('env5')">
+                    <span>Monitoreo de Niveles del Río</span>
+                    <span class="exercise-number">5</span>
+                </button>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <h2 class="category-title">Salud</h2>
+                </div>
+                <button class="exercise-btn" onclick="openExercise('health1')">
+                    <span>Presión Arterial</span>
+                    <span class="exercise-number">1</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('health2')">
+                    <span>Temperatura de Pacientes</span>
+                    <span class="exercise-number">2</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('health3')">
+                    <span>Contar Pacientes con Fiebre</span>
+                    <span class="exercise-number">3</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('health4')">
+                    <span>Clasificación TRIAGE</span>
+                    <span class="exercise-number">4</span>
+                </button>
+                <button class="exercise-btn" onclick="openExercise('health5')">
+                    <span>Saturación de Oxígeno SpO2</span>
+                    <span class="exercise-number">5</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+</body>
+</html>
